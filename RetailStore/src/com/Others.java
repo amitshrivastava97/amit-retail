@@ -2,8 +2,8 @@ package com;
 
 public class Others implements DiscountBillInterface {
 
-	double netAmount;
-	double discount;
+	private double netAmount;
+	private double discount;
 	@Override
 	public double getDiscount() {
 		double r = amount / 100;

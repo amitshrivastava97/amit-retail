@@ -2,9 +2,9 @@ package com;
 
 public class Customer implements DiscountBillInterface{
 
-	double tenure = 3;
-	double discount;		
-	double netAmount;
+	private double tenure = 3;
+	private double discount;		
+	private double netAmount;
 	
 	@Override
 	public double getDiscount() {
