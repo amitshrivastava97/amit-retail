@@ -2,7 +2,7 @@ package com;
 
 public class Vendor implements DiscountBillInterface{
 
-	private double netAmount;
+	//private double netAmount;
 	private double discount;
 	@Override
 	public double getDiscount() {
@@ -12,7 +12,7 @@ public class Vendor implements DiscountBillInterface{
 
 	@Override
 	public double billAmt() {
-		netAmount = amount - amount * discount/100;
+		double netAmount = amount - amount * discount/100;
 		return netAmount;
 	}
 

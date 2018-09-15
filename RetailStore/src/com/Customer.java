@@ -4,7 +4,7 @@ public class Customer implements DiscountBillInterface{
 
 	private double tenure = 3;
 	private double discount;		
-	private double netAmount;
+	//private double netAmount;
 	
 	@Override
 	public double getDiscount() {
@@ -22,7 +22,7 @@ public class Customer implements DiscountBillInterface{
 
 	@Override
 	public double billAmt() {
-		netAmount = amount - amount*discount/100;
+		double netAmount = amount - amount*discount/100;
 		return netAmount;
 	}
 

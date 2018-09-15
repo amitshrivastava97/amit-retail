@@ -2,7 +2,7 @@ package com;
 
 public class Others implements DiscountBillInterface {
 
-	private double netAmount;
+	//private double netAmount;
 	private double discount;
 	@Override
 	public double getDiscount() {
@@ -13,7 +13,7 @@ public class Others implements DiscountBillInterface {
 
 	@Override
 	public double billAmt() {
-		netAmount = amount - discount;
+		double netAmount = amount - discount;
 		return netAmount;
 	}
 
