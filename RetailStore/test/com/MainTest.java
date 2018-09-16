@@ -5,15 +5,8 @@ import junit.framework.TestCase;
 
 public class MainTest extends TestCase {
 
-	/*@Test
-	public void test() {
-		fail("Not yet implemented");
-	}*/
-	
 	private int actDiscountEmp;
-	private int actDiscountVendor;
-	private int actDiscountCust;
-	private int actDiscountOthers;
+	private int actDiscountVendor;	
 	
 	public MainTest(String testName) {
 	super(testName);
@@ -49,7 +42,7 @@ public class MainTest extends TestCase {
 	@Test
 	public void testGetDiscountCust()
 	{
-		actDiscountCust = 5;
+		int actDiscountCust = 5;
 		int discount = (int) new Customer().getDiscount();
 		assertEquals(discount, actDiscountCust);
 	}
@@ -57,7 +50,7 @@ public class MainTest extends TestCase {
 	@Test
 	public void testGetDiscountOthers()
 	{
-		actDiscountOthers = 45;
+		int actDiscountOthers = 45;
 		int discount = (int) new Others().getDiscount();
 		assertEquals(discount, actDiscountOthers);
 	}
