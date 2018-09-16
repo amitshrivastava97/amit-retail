@@ -8,7 +8,8 @@ public class Main {
 	{
 		System.out.println("Please Enter User..");
 		Scanner s = new Scanner(System.in);
-		String userInput = s.nextLine();		
+		String userInput = s.nextLine();
+		s.close();
 		
 		if(userInput.equalsIgnoreCase("Emp"))
 		{

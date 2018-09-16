@@ -2,11 +2,9 @@ package com;
 
 public class Vendor implements DiscountBillInterface{
 
-	//private double netAmount;
-	private double discount;
+	private double discount = 10;
 	@Override
 	public double getDiscount() {
-		discount = 10;
 		return discount;
 	}
 

@@ -1,17 +1,15 @@
 package com;
 
 public class Emp implements DiscountBillInterface{
-
-	//private double netAmount;
-	private double discount;
+	
+	private double discount = 30;
 	@Override
-	public double getDiscount() {
-		discount = 30;
+	public double getDiscount() {		
 		return discount;
 	}
 
 	@Override
-	public double billAmt() {
+	public double billAmt() {		
 		double netAmount = amount - amount * discount/100;
 		return netAmount;
 	}
