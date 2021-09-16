@@ -8,7 +8,7 @@ import com.Emp;
 import com.Others;
 import com.Vendor;
 
-public class MainTest extends TestCase {
+public class MainTest extends TestCase  {
 
 	private int actDiscountEmp;
 	private int actDiscountVendor;	
